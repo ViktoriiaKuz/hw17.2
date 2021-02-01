@@ -58,13 +58,13 @@ public class IntListAndStackImplTest {
         intListAndStack.add(9);
         intListAndStack.add(4);
 
-        int actualResult = 0;
+        boolean actualResult = false;
 
         try {
            intListAndStack.getByIndex(12);
         }
         catch (ArrayIndexOutOfBoundsException ex){
-                actualResult = 1;
+                actualResult = true;
 
         }
 
